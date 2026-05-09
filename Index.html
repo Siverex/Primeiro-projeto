@@ -1,213 +1,51 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BookLife - Login</title>  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>BookLife - Login</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="background-circle circle1"></div>
+  <div class="background-circle circle2"></div>
 
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .background-circle {
-      position: absolute;
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
-      background: rgba(59, 130, 246, 0.15);
-      filter: blur(80px);
-      animation: float 6s ease-in-out infinite;
-    }
-
-    .circle1 {
-      top: -100px;
-      left: -100px;
-    }
-
-    .circle2 {
-      bottom: -100px;
-      right: -100px;
-      background: rgba(168, 85, 247, 0.15);
-      animation-delay: 2s;
-    }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-
-    .login-container {
-      width: 400px;
-      padding: 40px;
-      border-radius: 28px;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      z-index: 10;
-      color: white;
-    }
-
-    .logo {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 2.5rem;
-      font-weight: 700;
-      background: linear-gradient(90deg, #60a5fa, #a855f7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #cbd5e1;
-      margin-bottom: 35px;
-      font-size: 0.95rem;
-    }
-
-    .input-group {
-      margin-bottom: 20px;
-    }
-
-    .input-group label {
-      display: block;
-      margin-bottom: 8px;
-      color: #e2e8f0;
-      font-size: 0.95rem;
-    }
-
-    .input-group input {
-      width: 100%;
-      padding: 14px 16px;
-      border: none;
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.08);
-      color: white;
-      font-size: 1rem;
-      outline: none;
-      transition: 0.3s;
-      border: 1px solid transparent;
-    }
-
-    .input-group input:focus {
-      border: 1px solid #60a5fa;
-      box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
-    }
-
-    .input-group input::placeholder {
-      color: #94a3b8;
-    }
-
-    .options {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 25px;
-      font-size: 0.9rem;
-    }
-
-    .options a {
-      color: #93c5fd;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .options a:hover {
-      color: #bfdbfe;
-    }
-
-    .login-btn {
-      width: 100%;
-      padding: 14px;
-      border: none;
-      border-radius: 14px;
-      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .login-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
-    }
-
-    .register {
-      text-align: center;
-      margin-top: 25px;
-      color: #cbd5e1;
-      font-size: 0.95rem;
-    }
-
-    .register a {
-      color: #93c5fd;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .register a:hover {
-      color: #dbeafe;
-    }
-
-    @media (max-width: 450px) {
-      .login-container {
-        width: 90%;
-        padding: 30px;
-      }
-
-      .logo {
-        font-size: 2rem;
-      }
-    }
-  </style></head>
-<body>  <div class="background-circle circle1"></div>
-  <div class="background-circle circle2"></div>  <div class="login-container">
+  <div class="login-container">
     <h1 class="logo">BookLife</h1>
-    <p class="subtitle">Experiência única a cada página</p><form>
-  <div class="input-group">
-    <label>Email</label>
-    <input type="email" placeholder="Digite seu email" required>
+    <p class="subtitle">Experiência única a cada página</p>
+
+    <form>
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Digite seu email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Senha</label>
+        <input type="password" placeholder="Digite sua senha" required>
+      </div>
+
+      <div class="options">
+        <label>
+          <input type="checkbox"> Lembrar-me
+        </label>
+        <a href="#">Esqueceu a senha?</a>
+      </div>
+
+      <button class="login-btn">Entrar</button>
+    </form>
+
+    <div class="register">
+      Não possui conta?
+      <a href="#">Criar conta</a>
+    </div>
   </div>
 
-  <div class="input-group">
-    <label>Senha</label>
-    <input type="password" placeholder="Digite sua senha" required>
-  </div>
-
-  <div class="options">
-    <label>
-      <input type="checkbox"> Lembrar-me
-    </label>
-
-    <a href="#">Esqueceu a senha?</a>
-  </div>
-
-  <button class="login-btn">Entrar</button>
-</form>
-
-<div class="register">
-  Não possui conta?
-  <a href="#">Criar conta</a>
-</div>
-
-  </div></body>
+</body>
 </html>
