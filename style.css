@@ -1,4 +1,4 @@
-/* Reset e Definições Gerais */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body {
   position: relative;
 }
 
-/* Elementos de Fundo (Círculos) */
+
 .background-circle {
   position: absolute;
   width: 350px;
@@ -74,7 +74,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Formulários e Inputs */
 .input-group {
   margin-bottom: 20px;
 }
@@ -107,7 +106,6 @@ body {
   color: #94a3b8;
 }
 
-/* Opções e Links */
 .options {
   display: flex;
   justify-content: space-between;
@@ -126,7 +124,6 @@ body {
   color: #bfdbfe;
 }
 
-/* Botão de Entrar */
 .login-btn {
   width: 100%;
   padding: 14px;
@@ -163,7 +160,6 @@ body {
   color: #dbeafe;
 }
 
-/* Responsividade */
 @media (max-width: 450px) {
   .login-container {
     width: 90%;
